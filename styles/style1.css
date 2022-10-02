@@ -65,23 +65,10 @@ border-color: rgb(100, 255, 218);
 }
 
 
-#hero,
-#about,
-#experience {
-    height: auto;
-    margin: 10vh 10vw 20vh;
-}
-
-/* {
+#hero {
     height: 80vh;
     margin: 10vh 10vw 20vh;
-} */
-
- /* {
-    height: 40vh;
-    margin: 10vh 0;
-    padding: 0 10vw;
-} */
+}
 
 h1 {
     color: #64ffda;
@@ -109,6 +96,24 @@ hr {
 
 /* vertical-align: middle; */
 
+hr.three-fourth {
+    width: 75%;
+}
+
+hr.one-half {
+    width: 50%;
+}
+
+hr.one-fourth {
+    width: 25%;
+}
+
+#about {
+    height: auto;
+    margin: 10vh;
+    padding: 0 10vw;
+}
+
 #about  a {
     text-decoration: none;
     color: #64ffda;
@@ -116,16 +121,16 @@ hr {
 
 #about img {
     border-radius: 5px;
-    max-width: 100%;
+    max-width: 320px;
     min-width: 0px;
     /* brightness(15%) invert(92%) 
     filter:   invert(5%) sepia(99%) saturate(492%) hue-rotate(81deg) brightness(102%) contrast(104%); */
 
-    /* box-shadow:
+    box-shadow:
     20px 24px 0 0px #0a192f,
     22px 22px 0 0px #64ffda,
     22px 26px 0px 0px #64ffda,
-    18px 26px 0 0px #64ffda; */
+    18px 26px 0 0px #64ffda;
 }
 
 #about img:hover {
@@ -135,6 +140,12 @@ hr {
     14px 12px 0 0px #64ffda,
     14px 16px 0px 0px #64ffda,
     10px 16px 0 0px #64ffda;
+}
+
+#experience {
+    height: 40vh;
+    margin: 0vh 0;
+    padding: 0 20vw;
 }
 
 #experience ul {
@@ -218,9 +229,9 @@ h4 {
 
 hr.headerline {
     display: inline-block;
-    width: 23%;
+    width: 25%;
     vertical-align: middle;
-    margin-left: 1em; 
+    margin: 0em 1em; 
 }
 
 body::-webkit-scrollbar {
@@ -238,9 +249,4 @@ background-color: slategray;
 }
 
 @media (min-width: 1200px) {
-    #about {
-        height: auto;
-        margin: 10vh;
-        padding: 0 10vw;
-    }
 }
