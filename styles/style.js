@@ -17,6 +17,9 @@ const hero = document.getElementsByClassName('hero')
 
 const mainContainer = document.querySelector('.main-container')
 
+
+const sides = document.getElementsByClassName('side')
+
 navBrand.style.visibility = "hidden"
 
 for (element of navItems) {
@@ -24,6 +27,10 @@ for (element of navItems) {
 }
 
 for (element of hero) {
+    element.style.visibility = "hidden"
+}
+
+for (element of sides) {
     element.style.visibility = "hidden"
 }
 
@@ -78,10 +85,17 @@ navBrand.addEventListener('animationend', () => {
         heroLine.style.setProperty('--animate-duration', '600ms');
         heroLine.classList.add('animate__animated', 'animate__fadeIn');
     });
+    // heroLine.addEventListener('animationend', () => {
+    //     mainContainer.style.visibility = "visible"
+    //     mainContainer.style.setProperty('--animate-duration', '1s');
+    //     mainContainer.classList.add('animate__animated', 'animate__flash');
+    // });
     heroLine.addEventListener('animationend', () => {
-        mainContainer.style.visibility = "visible"
-        mainContainer.style.setProperty('--animate-duration', '1s');
-        mainContainer.classList.add('animate__animated', 'animate__flash');
+        for (element of sides) {
+            element.style.visibility = "visible"
+            element.classList.add('animate__animated', 'animate__fadeIn');
+        }
+        // mainContainer.style.setProperty('--animate-duration', '1s');
     });
 });
 
