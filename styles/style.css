@@ -14,6 +14,11 @@ span {
 span.fa-li {
     color:#64ffda;
 }
+.nav-logo {
+    width: 50px;
+
+}
+
 .navbar a {
     font-family: "Roboto Mono", monospace;
     color: #ccd6f6;
@@ -67,15 +72,16 @@ border-color: rgb(100, 255, 218);
 
 #hero,
 #about,
-#experience {
+#experience,
+#projects,
+#contact {
     height: auto;
-    margin: 10vh 10vw 20vh;
+    margin: 10vh 5vw 10vh;
 }
 
-/* {
-    height: 80vh;
-    margin: 10vh 10vw 20vh;
-} */
+#hero {
+    height: 80vh
+}
 
  /* {
     height: 40vh;
@@ -121,11 +127,11 @@ hr {
     /* brightness(15%) invert(92%) 
     filter:   invert(5%) sepia(99%) saturate(492%) hue-rotate(81deg) brightness(102%) contrast(104%); */
 
-    /* box-shadow:
+    box-shadow:
     20px 24px 0 0px #0a192f,
     22px 22px 0 0px #64ffda,
     22px 26px 0px 0px #64ffda,
-    18px 26px 0 0px #64ffda; */
+    18px 26px 0 0px #64ffda;
 }
 
 #about img:hover {
@@ -137,21 +143,35 @@ hr {
     10px 16px 0 0px #64ffda;
 }
 
+#experience .exp-title {
+    color: #64ffda;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#experience .exp-date {
+    font-family: "Roboto Mono", monospace;
+}
+
 #experience ul {
+    padding: 0;
     list-style-type: none;
 }
 
-#experience ul button{
-    padding: 10px;
-    background-color: #0a192f;
-    border: none;
-    border-left: 2px solid white;
-    color: #8892b0;
+/* #experience ul li {
+    margin: 2%;
+} */
+
+#experience .collapse li {
+    padding: none;
+    margin: 5px 0;
 }
 
-#projects {
-    height: auto;
-    margin: 10vh 10vw 20vh;
+#experience ul button{
+    background-color: #0a192f;
+    border: none;
+    border-bottom: 1px solid white;
+    color: #8892b0;
 }
 
 .project__1 {
@@ -242,5 +262,10 @@ background-color: slategray;
         height: auto;
         margin: 10vh;
         padding: 0 10vw;
+    }
+
+    #projects {
+        height: auto;
+        margin: 10vh 10vw 20vh;
     }
 }
