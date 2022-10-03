@@ -67,7 +67,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 }
 
 .main-container {
-    padding: 3%;
+    padding: 5px;
     position: relative
 }
 
@@ -152,27 +152,31 @@ hr {
     list-style-type: none;
 }
 
+#experience .collapse {
+    max-width: 70%;
+}
+
 #experience .collapse li {
     padding: none;
-    margin: 5px 0;
+    margin: 3% 0;
 }
 
 #experience ul button{
     background-color: #0a192f;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #8892b0;
     color: #8892b0;
 }
 
 .project {
-    margin: 20px 0;
+    margin: 10% 0;
     border: 5px solid rgb(100, 255, 218, .1);
 }
 
 .project__1,
 .project__2 {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     background-color:rgb(10, 18, 25);
     background-blend-mode: overlay;
     background-size: 100% 100%;
@@ -319,8 +323,39 @@ footer a:hover,
     }
 }
 
+@media (min-width: 992px) {
+    .project {
+        border: 5px solid #0a192f;
+        background-size: 60% 100%;
+        background-color: #0a192f;
+        background-blend-mode: normal;
+    }
+
+    .project__1 {
+        background-position: right 100%;
+    }
+
+    .project__desc {
+        max-width: 60%
+    }
+
+    .project__desc__2 {
+        position: absolute;
+        right: 0;
+    }
+
+    .project__desc__2 div,
+    .project__desc__2 p {
+        text-align: right;
+    }
+
+    .pd_body {
+        padding: 3%;
+        background-color: #0a192f;
+    }
+}
+
 @media (min-width: 1200px) {
-   
     #about .image-container {
         min-width:320px;
     }
@@ -336,6 +371,6 @@ footer a:hover,
 
     #projects {
         height: auto;
-        padding: 10vh;
+        padding: 10vh 10vw;
     }
 }

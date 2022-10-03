@@ -4,6 +4,7 @@ const navSecond = document.querySelector('.nav-second')
 const navThird = document.querySelector('.nav-third')
 const navFourth = document.querySelector('.nav-fourth')
 const navFifth = document.querySelector('.nav-fifth')
+const navToggler = document.querySelector('.navbar-toggler')
 const navItems = document.getElementsByClassName('nav-item')
 
 
@@ -21,6 +22,7 @@ const mainContainer = document.querySelector('.main-container')
 const sides = document.getElementsByClassName('side')
 
 navBrand.style.visibility = "hidden"
+navToggler.style.visibility = "hidden"
 
 for (element of navItems) {
     element.style.visibility = "hidden"
@@ -36,11 +38,14 @@ for (element of sides) {
 
 navBrand.style.visibility = "visible"
 navBrand.classList.add('animate__animated', 'animate__backInUp');
-
-
 navBrand.addEventListener('animationend', () => {
+    navToggler.style.visibility = "visible"
+    navToggler.classList.add('animate__animated', 'animate__backInUp');
+
+    
     navFirst.style.visibility = "visible"
     navFirst.classList.add('animate__animated', 'animate__fadeInDown');
+
 
     navFirst.addEventListener('animationend', () => {
     navSecond.style.visibility = "visible"
