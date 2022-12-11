@@ -89,17 +89,17 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 }
 
 
-h1 {
+h2 {
     color: #64ffda;
     font-family: "Roboto Mono";
     font-size: 20px;
 }
 
-h2 {
+h1 {
     color: #ccd6f6;
 }
 
-h2, h3 {
+h1, h3 {
     font-weight: bold;
     font-size: clamp(40px, 8vw, 80px);
 }
@@ -191,10 +191,10 @@ hr {
 }
 
 .project__1 {
-    background-image: url("../files/project1_screenshot.png");
+    background-image: url("../files/Nathaniel_project1_screenshot.png");
 }
 .project__2 {
-    background-image: url("../files/project2_screenshot.png");
+    background-image: url("../files/Nathaniel_project2_screenshot.png");
 }
 
 .project__desc {

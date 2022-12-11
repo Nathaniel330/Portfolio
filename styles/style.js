@@ -8,8 +8,8 @@ const navToggler = document.querySelector('.navbar-toggler')
 const navItems = document.getElementsByClassName('nav-item')
 
 
-const heroH1 = document.querySelector('.hero__h1')
 const heroH2 = document.querySelector('.hero__h2')
+const heroH1 = document.querySelector('.hero__h1')
 const heroH3 = document.querySelector('.hero__h3')
 const heroText = document.querySelector('.hero__text')
 const heroLine = document.querySelector('.hero__line')
@@ -66,16 +66,16 @@ navBrand.addEventListener('animationend', () => {
         navFifth.classList.add('animate__animated', 'animate__fadeInDown');
     });
     navFifth.addEventListener('animationend', () => {
-        heroH1.style.visibility = "visible"
-        heroH1.style.setProperty('--animate-duration', '600ms');
-        heroH1.classList.add('animate__animated', 'animate__fadeIn');
-    });
-    heroH1.addEventListener('animationend', () => {
         heroH2.style.visibility = "visible"
         heroH2.style.setProperty('--animate-duration', '600ms');
         heroH2.classList.add('animate__animated', 'animate__fadeIn');
     });
     heroH2.addEventListener('animationend', () => {
+        heroH1.style.visibility = "visible"
+        heroH1.style.setProperty('--animate-duration', '600ms');
+        heroH1.classList.add('animate__animated', 'animate__fadeIn');
+    });
+    heroH1.addEventListener('animationend', () => {
         heroH3.style.visibility = "visible"
         heroH3.style.setProperty('--animate-duration', '600ms');
         heroH3.classList.add('animate__animated', 'animate__fadeIn');
