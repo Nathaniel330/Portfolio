@@ -76,6 +76,10 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
     padding: 10vh 5vw;
 }
 
+.hero__text {
+    width: 500px;
+}
+
 #about,
 #experience,
 #projects,
@@ -101,7 +105,7 @@ h1 {
 
 h1, h3 {
     font-weight: bold;
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(40px, 8vw, 60px);
 }
 
 hr {
@@ -382,21 +386,37 @@ footer a:hover,
 }
 
 @media (min-width: 1200px) {
+    .main-container {
+        padding: 30px;
+    }
+
+    #hero {
+        padding: 10vh 18vw;
+    }
+
     #about .image-container {
         min-width:320px;
     }
 
     #about{
-        padding: 10vh 10vw;
+        padding: 10vh 23vw;
         /* border: 1px solid white; */
     }
 
     #experience {
-        padding: 10vh 15vw;
+        padding: 10vh 28vw;
     }
 
     #projects {
         height: auto;
-        padding: 10vh 10vw;
+        padding: 10vh 18vw;
+    }
+
+    .sideA {
+        left: -192px;
+    }
+
+    .sideB {
+        right: -192px;
     }
 }
