@@ -76,9 +76,6 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
     padding: 10vh 5vw;
 }
 
-.hero__text {
-    width: 500px;
-}
 
 #about,
 #experience,
@@ -392,6 +389,10 @@ footer a:hover,
 
     #hero {
         padding: 10vh 18vw;
+    }
+
+    .hero__text {
+        width: 500px;
     }
 
     #about .image-container {
