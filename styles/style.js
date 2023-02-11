@@ -1,5 +1,5 @@
 const inspiringExpression = document.querySelector('#dictumTarget')
-fetch('https://api.fisenko.net/v1/quotes/en/random')
+fetch('https://lucky-ox-bell-bottoms.cyclic.app/https://api.fisenko.net/v1/quotes/en/random')
     .then(response => response.json())
     .then(data => {
         inspiringExpression.textContent = `${data.text} ~${data.author.name}`
