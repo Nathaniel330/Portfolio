@@ -1,3 +1,10 @@
+const inspiringExpression = document.querySelector('#dictumTarget')
+fetch('https://api.fisenko.net/v1/quotes/en/random')
+    .then(response => response.json())
+    .then(data => {
+        inspiringExpression.textContent = `${data.text} ~${data.author.name}`
+    })
+
 const navBrand = document.querySelector('.navbar-brand')
 const navFirst = document.querySelector('.nav-first')
 const navSecond = document.querySelector('.nav-second')
