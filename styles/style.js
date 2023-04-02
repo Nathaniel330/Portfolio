@@ -1,3 +1,4 @@
+//For the inspiring Expressions or "Quotes" API
 const inspiringExpression = document.querySelector('#dictumTarget')
 fetch('https://lucky-ox-bell-bottoms.cyclic.app/https://api.fisenko.net/v1/quotes/en/random')
     .then(response => response.json())
@@ -5,6 +6,8 @@ fetch('https://lucky-ox-bell-bottoms.cyclic.app/https://api.fisenko.net/v1/quote
         inspiringExpression.textContent = `${data.text} ~${data.author.name}`
     })
 
+
+//For #hero animation on page load
 const navBrand = document.querySelector('.navbar-brand')
 const navFirst = document.querySelector('.nav-first')
 const navSecond = document.querySelector('.nav-second')
@@ -109,7 +112,20 @@ navBrand.addEventListener('animationend', () => {
         }
         // mainContainer.style.setProperty('--animate-duration', '1s');
     });
-});
+});// animate__fadeIn
 
 
-// animate__fadeIn
+//For #title animation
+const title = document.querySelector('#title')
+title.textContent = 'web developer'
+
+function start(counter, text){
+    if(counter < 10){
+      setTimeout(function(){
+        counter++;
+        text.textContent = 'software developer'
+        start(counter);
+      }, 1000);
+    }
+  }
+start(0, title);
