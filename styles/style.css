@@ -170,6 +170,7 @@ hr {
 }
 
 .project {
+    box-sizing: border-box;
     margin: 10% 0;
     border: 5px solid rgb(100, 255, 218, .1);
 }
@@ -192,10 +193,10 @@ hr {
 }
 
 .project__1 {
-    background-image: url("../files/Nathaniel_project1_screenshot.png");
+    background-image: url("../files/clone_Toptal.gif");
 }
 .project__2 {
-    background-image: url("../files/Nathaniel_project2_screenshot.png");
+    background-image: url("../files/dental-clinic.gif");
 }
 
 .project__desc {
