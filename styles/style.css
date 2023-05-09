@@ -181,7 +181,8 @@ hr {
 }
 
 .project__1,
-.project__2 {
+.project__2,
+.project__3 {
     width: 100%;
     height: 375px;
     background-color:rgb(10, 18, 25);
@@ -197,6 +198,9 @@ hr {
 }
 .project__2 {
     background-image: url("../files/dental-clinic.gif");
+}
+.project__3 {
+    background-image: url("../files/crud-x-mvc.gif");
 }
 
 .project__desc {
@@ -411,12 +415,14 @@ footer a:hover,
         max-width: 60%
     }
 
-    .project__desc__2 {
+    .project__desc__2,
+    .project__desc__3 {
         position: absolute;
         right: 0;
     }
 
-    .project__desc__2 div {
+    .project__desc__2 div,
+    .project__desc__3 div {
         text-align: right;
     }
 
